@@ -44,3 +44,20 @@ button {
 #qrcodeDisplay {
     margin-top: 20px;
 }
+.teks {
+    position: fixed;
+    right: 10px;
+    bottom: 11px;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.teks2 {
+    position: fixed;
+    left: 10px;
+    bottom: 11px;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 4px;
+}

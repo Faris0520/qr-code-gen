@@ -16,11 +16,11 @@
         </form>
         <div id="qrcodeDisplay"></div>
     </div>
-
+    <div class="teks"><p><a href="https://github.com/faris0520">Faris0520</a></p></div>
     <script>
         $(document).ready(function() {
             $('#qrForm').on('submit', function(event) {
-                event.preventDefault(); // Mencegah form dari pengiriman default
+                event.preventDefault();
 
                 $.ajax({
                     type: 'POST',
