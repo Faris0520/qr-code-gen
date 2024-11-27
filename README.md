@@ -1,6 +1,6 @@
 # QR Code Generator Website Using Python
 
-https://dog-cat-facts.vercel.app/
+https://qr-code-gen-puce.vercel.app/
 
 Website to create qr code, made using python flask I hope u like it :)
 
