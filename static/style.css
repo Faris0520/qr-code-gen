@@ -1,0 +1,43 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1689783101560-a4f8550eb19b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNTc4NDV8MHwxfHNlYXJjaHwzfHxiZWFjaCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3MzI2Nzg2NjB8MA&ixlib=rb-4.0.3&q=80&w=1080');
+    backdrop-filter: blur(5px);
+    color: #333;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.83);
+    border-radius: 15px;
+    padding: 40px; /* Meningkatkan padding */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Menentukan lebar container */
+    max-width: 90%; /* Memastikan container tidak lebih lebar dari 90% dari layar */
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    margin-top: 20px;
+    color: white;
+}
+
+#qrcodeDisplay {
+    margin-top: 20px;
+}

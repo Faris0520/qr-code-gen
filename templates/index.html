@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <form id="qrForm">
+            <input type="text" name="data" placeholder="Enter text or URL..." required>
+            <button type="submit">Buat QR Code</button>
+        </form>
+        <div id="qrcodeDisplay"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#qrForm').on('submit', function(event) {
+                event.preventDefault(); // Mencegah form dari pengiriman default
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/generate',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#qrcodeDisplay').html('<img src="' + response.url + '" alt="QR Code">');
+                    },
+                    error: function() {
+                        alert('Terjadi kesalahan saat menghasilkan QR Code.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
